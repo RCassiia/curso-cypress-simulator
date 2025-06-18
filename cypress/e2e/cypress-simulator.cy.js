@@ -28,7 +28,7 @@ describe("Cypress Simulator", () => {
       //.type("cy.run('Teste')")
     //cy.contains("button", "Run").click()
 
-    //cy.run("cy.run('Teste')")
+    cy.run("cy.run('Teste')")
 
     cy.get('#outputArea', { timeout: 6000 })
     .should("contain", "Invalid Cypress command: cy.run('Teste')")
