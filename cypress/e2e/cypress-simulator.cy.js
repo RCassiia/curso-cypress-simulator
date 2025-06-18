@@ -22,7 +22,7 @@ describe("Cypress Simulator", () => {
    
   })
 
-  it.only("Apresentar Erro ao digitar um comando cypress inválido(e.g., cy.run()).", () => {
+  it("Apresentar Erro ao digitar um comando cypress inválido(e.g., cy.run()).", () => {
    
     //cy.get("textarea[placeholder='Write your Cypress code here...']")
       //.type("cy.run('Teste')")
