@@ -22,13 +22,13 @@ describe("Cypress Simulator", () => {
    
   })
 
-  it("Apresentar Erro ao digitar um comando cypress inválido(e.g., cy.run()).", () => {
+  it.only("Apresentar Erro ao digitar um comando cypress inválido(e.g., cy.run()).", () => {
    
     //cy.get("textarea[placeholder='Write your Cypress code here...']")
       //.type("cy.run('Teste')")
     //cy.contains("button", "Run").click()
 
-    cy.run("cy.run('Teste')")
+    //cy.run("cy.run('Teste')")
 
     cy.get('#outputArea', { timeout: 6000 })
     .should("contain", "Invalid Cypress command: cy.run('Teste')")

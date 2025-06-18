@@ -1,6 +1,6 @@
 const { defineConfig } = require("cypress")
 
-const cypressSplit = require("cypress-split")
+const cypressSplit = require("cypress-split")// Importando o cypress split em uma variável
 
 module.exports = defineConfig({
   viewportHeight: 1024,
